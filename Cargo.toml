@@ -1,0 +1,57 @@
+[package]
+name = "dead-reckoning"
+version = "0.1.0"
+edition = "2021"
+authors = ["Zane Hambly <zanehambly@gmail.com>"]
+description = "Dead man's switch with duress detection and secret sharing"
+license = "Apache-2.0"
+repository = "https://github.com/Zaneham/dead-reckoning"
+keywords = ["security", "privacy", "dead-mans-switch", "shamir"]
+categories = ["command-line-utilities", "cryptography"]
+
+[dependencies]
+# CLI
+clap = { version = "4", features = ["derive"] }
+
+# Async runtime
+tokio = { version = "1", features = ["full"] }
+
+# Serialization
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+toml = "0.8"
+
+# Crypto
+sha2 = "0.10"
+aes-gcm = "0.10"
+argon2 = "0.5"
+rand = "0.8"
+
+# Secret sharing (Shamir)
+sharks = "0.5"
+
+# Time
+chrono = { version = "0.4", features = ["serde"] }
+
+# Notifications
+lettre = { version = "0.11", features = ["tokio1-native-tls"] }
+reqwest = { version = "0.12", features = ["json"] }
+
+# Error handling
+thiserror = "1"
+anyhow = "1"
+
+# Config and paths
+directories = "5"
+
+# Pretty output
+colored = "2"
+
+# Hex encoding
+hex = "0.4"
+
+# System monitoring
+sysinfo = "0.32"
+
+[dev-dependencies]
+tempfile = "3"
