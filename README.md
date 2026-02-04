@@ -549,13 +549,10 @@ Apache 2.0. Do whatever you want. If this software ends up saving someone's life
 - **The AES designers** - Joan Daemen and Vincent Rijmen
 - **The Argon2 team** - For winning the Password Hashing Competition
 - **Lettre maintainers** - For making Rust email not terrible
+- **Low Level** - His Rust videos and courses helped with the project. 
 - **You** - For reading a README about software for when you're dead
 
 ---
-
-*Built with morbid curiosity in Aotearoa New Zealand.*
-
-*"She'll be right, mate." - No one, about death.*
 
 ```
       ___
