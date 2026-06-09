@@ -480,46 +480,7 @@ Less legitimate but valid reasons:
 - "It seemed like a fun project"
 - The NSO Group exists and that makes you uncomfortable
 
-## Technical Architecture
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                    Dead Reckoning                       │
-├─────────────────────────────────────────────────────────┤
-│                                                         │
-│  voyage.toml (config)                                   │
-│       ↓                                                 │
-│  Watch Module ←── parley command ──→ Check-in          │
-│       ↓                                                 │
-│  Daemon (monitors)                                      │
-│       ↓                                                 │
-│  [Timer Expired?]                                       │
-│       ↓ Yes                                             │
-│  Fleet Module ──→ SMTP / Webhook / Signal / etc.       │
-│       ↓                                                 │
-│  Your contacts receive the news                         │
-│       ↓                                                 │
-│  They reconstruct your secrets with Shamir shares       │
-│       ↓                                                 │
-│  Your digital legacy continues without you              │
-│                                                         │
-│  ┌─────────────────────────────────────────────────┐   │
-│  │ Crypto Module                                   │   │
-│  │   Argon2 ──→ Key Derivation                     │   │
-│  │   AES-256-GCM ──→ Encryption                    │   │
-│  │   SHA-256 ──→ Phrase Hashing                    │   │
-│  │   Shamir SSS ──→ Secret Splitting               │   │
-│  └─────────────────────────────────────────────────┘   │
-│                                                         │
-│  ┌─────────────────────────────────────────────────┐   │
-│  │ Sentinel Module (Compromise Detection)          │   │
-│  │   Process Scanner ──→ Known malware patterns    │   │
-│  │   Path Analysis ──→ Suspicious locations        │   │
-│  │   Name Matching ──→ RATs, spyware, keyloggers   │   │
-│  │   Threat Assessment ──→ CLEAR/LOW/MED/HIGH/CRIT │   │
-│  └─────────────────────────────────────────────────┘   │
-│                                                         │
-└─────────────────────────────────────────────────────────┘
 ```
 
 ## Related Projects
