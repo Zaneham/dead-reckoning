@@ -481,7 +481,7 @@ Less legitimate but valid reasons:
 - The NSO Group exists and that makes you uncomfortable
 
 
-```
+
 
 ## Related Projects
 
@@ -513,22 +513,6 @@ Apache 2.0. Do whatever you want. If this software ends up saving someone's life
 - **Low Level** - His Rust videos and courses helped with the project. 
 - **You** - For reading a README about software for when you're dead
 
----
 
-```
-      ___
-   .-'   `'.
-  /         \
- |  (o) (o)  |
- |     ^     |
- |  '-----'  |
-  \  `===`  /
-   '-.....-'
-  /|       |\
- / |  |||  | \
-/  |  |||  |  \
-   |__|||__|
 
-  RELEASE THE KRAKEN
-  (when the captain stops responding)
-```
+
